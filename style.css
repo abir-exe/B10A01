@@ -1,0 +1,76 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#hero{
+    background-image: url(./assets/Hero-bg.png);
+    
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+}
+
+#inspiration{
+    text-align: center;
+    font-weight: 700;
+}
+
+#video{
+    border-radius: 20px;
+}
+
+#video-div{
+    display: flex;
+    justify-content: center;
+}
+
+#mct{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mnt-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid rgb(223, 212, 212); 
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#ins{
+    background-image: url(./assets/handshake.jpg);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    border-radius: 8px;
+    
+    width: 1140px;
+    height: 313px;
+    
+   
+}
+
+#ins-input{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
