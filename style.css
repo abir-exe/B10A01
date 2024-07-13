@@ -1,76 +1,207 @@
-#navbar{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Azeret Mono", monospace;
+  width: 1140px;
+  margin: auto;
 }
 
-#hero{
-    background-image: url(./assets/Hero-bg.png);
-    
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px;
+  margin-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.card{
-    display: flex;
-    justify-content: space-around;
+#hero {
+  background-image: url(./assets/Hero-bg.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
 }
 
-#inspiration{
-    text-align: center;
-    font-weight: 700;
+/* all heading and slogans  */
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.slogan {
+  font-size: 16px;
+  opacity: calc(70%);
+  text-align: center;
 }
 
-#video{
-    border-radius: 20px;
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#video-div{
-    display: flex;
-    justify-content: center;
+#inspiration {
+  text-align: center;
+  font-weight: 700;
 }
 
-#mct{
-    display: flex;
-    justify-content: space-around;
+#video {
+  border-radius: 20px;
 }
 
-.mnt-card{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    border: 1px solid rgb(223, 212, 212); 
-    border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+#video-div {
+  display: flex;
+  justify-content: center;
 }
 
-#ins{
-    background-image: url(./assets/handshake.jpg);
+/* my current target  */
+#mct {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+/* cards  */
+.mct-card {
+  padding: 28px;
+  border-radius: 8px;
+  background-color: #fff2ef;
+}
+
+#mnt-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mnt-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid rgb(223, 212, 212);
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 1140px;
+}
+
+#ins {
+    position: relative;
     display: flex;
     justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
+    align-items: center; /* Centers vertically */
     border-radius: 8px;
-    
     width: 1140px;
     height: 313px;
-    
-   
+    background-image: url(./assets/handshake.jpg);
+    background-size: cover; /* Make the image cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    overflow: hidden; /* Ensures the pseudo-element doesn't overflow the div */
+  }
+  
+  #ins::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.5); /* Dark gray with 50% opacity */
+    z-index: 1; /* Place the pseudo-element behind the content */
+    border-radius: 8px; /* Match the border radius of the parent div */
+  }
+  
+  #ins > * {
+    position: relative;
+    z-index: 2; /* Place the content above the pseudo-element */
+  }
+
+
+#ins-input {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-#ins-input{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+#footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-#footer{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+/* buttons  */
+
+/* resume download btn  */
+#resume-btn {
+  width: 220px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+#resume-btn:hover {
+  background-color: black; /* Background color on hover */
+  color: white; /* Text color on hover */
+  border-color: white; /* Border color on hover */
+}
+
+/* contact with me  */
+#cwm-btm {
+  padding: 14px 30px 14px 30px;
+  background: #0d1321;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#cwm-btn:hover {
+  background-color: white; /* Background color on hover */
+  color: black; /* Text color on hover */
+  border-color: black; /* Border color on hover */
+}
+
+/* learn more button  */
+.lm-btn {
+  padding: 12px 40px 12px 40px;
+  font-size: medium;
+  font-weight: 600;
+  color: #565f74;
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+}
+
+/* feedback intput  */
+#feedback-input {
+  width: 420px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+#submit-btn {
+  padding: 10px 30px 10px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  background: white;
 }

@@ -5,34 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- navbar  -->
     <section>
       <div id="navbar">
-        <h4>Abir M.</h4>
-        <button>Download Resume</button>
+        <div style="font-size: 28px; font-weight: 800">Abir M.</div>
+        <button id="resume-btn">Download Resume</button>
       </div>
     </section>
     <!-- hero section  -->
     <section>
       <div id="hero">
-        <img src="./assets/Group.png" alt="" />
-        <h2>"In the near future, I hope to become a Developer."</h2>
-        <p>
+        <img style="width: 250px" src="./assets/Group.png" alt="" />
+        <div style="font-size: 48px; font-weight: 700;">"In the near future, I hope to become a Developer."</div>
+        <p style="opacity: calc(70%);">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text.
         </p>
-        <button>Contact with me</button>
+        <a href="#ins"><button id="cwm-btm">Contact with me</button></a>
       </div>
     </section>
     <!-- Why web development section  -->
-    <section>
-      <h2 group="heading">Why Web Development</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text.
-      </p>
+    <section style="margin-top: 150px">
+      <div style="margin-bottom: 80px">
+        <div class="heading">Why Web Development??</div>
+        <div class="slogan">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text.
+        </div>
+      </div>
       <!-- card -->
       <div class="card">
         <div>
@@ -41,7 +50,7 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <button>Learn More</button>
+          <button class="lm-btn">Learn More</button>
         </div>
         <div>
           <img src="./assets/Layer_1.png" alt="" />
@@ -58,7 +67,7 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <button>Learn More</button>
+          <button class="lm-btn">Learn More</button>
         </div>
       </div>
       <!-- card -->
@@ -69,7 +78,7 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-          <button>Learn More</button>
+          <button class="lm-btn">Learn More</button>
         </div>
         <div>
           <img src="./assets/Group 4.png" alt="" />
@@ -78,12 +87,12 @@
     </section>
     <!-- My inspiration section  -->
     <section>
-      <div id="inspiration">
-        <h2>My Inspiration</h2>
-        <p>
+      <div id="inspiration" style="margin-bottom: 80px">
+        <div class="heading">My Inspiration</div>
+        <div class="slogan">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text.
-        </p>
+        </div>
       </div>
       <!-- yt video  -->
       <div id="video-div">
@@ -101,50 +110,50 @@
       </div>
     </section>
     <!-- my current target section  -->
-    <section>
-      <div id="inspiration">
-        <h2>My Current Target</h2>
-        <p>
+    <section style="margin-top: 200px">
+      <div id="inspiration" style="margin-bottom: 80px">
+        <div class="heading">My Current Target</div>
+        <div class="slogan">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text.
-        </p>
+        </div>
       </div>
       <!-- cards   -->
       <div id="mct">
         <!-- card -->
-        <div>
+        <div class="mct-card">
           <img src="./assets/html.png" alt="" />
-          <h5>HTML</h5>
+          <div>HTML</div>
           <p>Lorem Ipsum is simply dummy text of the printing</p>
           <u><b>Learn More</b></u>
         </div>
         <!-- card -->
-        <div>
+        <div class="mct-card" style="background-color: #e7eefc;">
           <img src="./assets/css.png" alt="" />
-          <h5>CSS</h5>
+          <div>CSS</div>
           <p>Lorem Ipsum is simply dummy text of the printing</p>
           <u><b>Learn More</b></u>
         </div>
         <!-- card -->
-        <div>
+        <div class="mct-card" style="background-color: #faf6e2;">
           <img src="./assets/js.png" alt="" />
-          <h5>JavaScript</h5>
+          <div>JavaScript</div>
           <p>Lorem Ipsum is simply dummy text of the printing</p>
           <u><b>Learn More</b></u>
         </div>
       </div>
     </section>
     <!-- My Next Target  -->
-    <section>
-      <div id="inspiration">
-        <h2>My Next Target</h2>
-        <p>
+    <section style="margin-top: 200px">
+      <div id="inspiration" style="margin-bottom: 80px">
+        <div class="heading">My Next Target</div>
+        <div class="slogan">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text.
-        </p>
+        </div>
       </div>
       <!-- cards  -->
-      <div>
+      <div id="mnt-cards">
         <!-- card  -->
         <div class="mnt-card">
           <div>
@@ -190,32 +199,56 @@
       </div>
     </section>
     <!-- I need suppot section  -->
-    <section style="display: flex; justify-content:center;">
+    <section style="display: flex; justify-content: center; margin-top: 150px;">
       <div id="ins">
         <div>
-            <h2 style="text-align: center">I Need Support</h2>
-        <p style="text-align: center">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text.
-        </p>
+          <h2 style="text-align: center; color: white; margin-bottom: 20px">
+            I Need Support
+          </h2>
+          <p style="text-align: center; color: white; margin-bottom: 48px">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
 
-        <div id="ins-input">
-          <input type="text" placeholder="Suggest me any feedback for me" />
-          <input type="submit" value="Submit" />
-        </div>
+          <div id="ins-input">
+            <input
+              id="feedback-input"
+              type="text"
+              placeholder="Suggest me any feedback for me "
+            />
+            <button id="submit-btn">Submit</button>
+          </div>
         </div>
       </div>
     </section>
     <!-- footer  -->
     <section>
-        <div id="footer">
-          <h4>An Open Commitment by Abir Mahmud</h4>
-          <div style="display:flex; gap: 12px;">
-            <img style="width: 36px; height: 36px;" src="./assets/facebook.png" alt="">
-            <img style="width: 36px; height: 36px;" src="./assets/github.png" alt="">
-            <img style="width: 36px; height: 36px;" src="./assets/linkedin-icon 1.png" alt="">
-          </div>
+      <div id="footer">
+        <h4>An Open Commitment by Abir Mahmud</h4>
+        <div style="display: flex; gap: 18px">
+          <a href="https://www.facebook.com/myself.abirmahmud/">
+            <img 
+              style="width: 36px; height: 36px; cursor: pointer;"
+              src="./assets/facebook.png"
+              alt=""
+            />
+          </a>
+          <a href="https://github.com/abir-exe">
+            <img 
+              style="width: 36px; height: 36px; cursor: pointer;"
+              src="./assets/github.png"
+              alt=""
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/web-abirmahmud/">
+            <img 
+              style="width: 36px; height: 36px; cursor: pointer;"
+              src="./assets/linkedin-icon 1.png"
+              alt=""
+            />
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
   </body>
 </html>
